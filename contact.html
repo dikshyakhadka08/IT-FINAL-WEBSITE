@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Contact Us</title>
+	<link rel="stylesheet" type="text/css" href="contactus.css">
+</head>
+<body>
+	<header class="Nav">
+		<a href="#" class="logo">Online Tarkari Bazar</a>
+		<ul>
+		<li><a class="a" href="index.html" >HOME</a></li>
+    	<li><a class="b" href="profile.html" >PROFILE</a></li>
+    	<li><a class="c" href="gallery.html" >GALLERY</a></li>     
+    	<li><a class="d" href="contact.html" >CONTACT US</a></li> 
+    	<li><a class="e" href="aboutus.html" >ABOUT US</a></li>
+    </ul>
+	</header>
+	<a  href="mailto:((dikshya152207@gmail.com))" > <b> Click Here to send mail <b></a><br>
+	<div class="contact-section">
+		<h1>-- Contact Us --</h1>
+		<div class="border"></div>
+		<form class="contact-form" action="contact.html" method="post" id="Form">
+			<input type="" name="" class="contact-form-text" placeholder="Your Name">
+			<input type="" name="" class="contact-form-text" placeholder="Your Email" id="email" onkeydown="validation()"><span id="Text"></span>
+			<input type="" name="" class="contact-form-text" placeholder="Your Number">
+			<textarea class="contact-form-text" placeholder="Your message"></textarea>
+			<input type="submit" class="contact-form-btn" value="Send">
+		</form>
+	</div>
+	<script>
+		function validation(){
+	var form = document.getElementById("Form");
+	var email = document.getElementById("email").value;
+	var text = document.getElementById("Text");
+	var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+	 if (email.match(pattern)){
+	 	form.classList.add("valid");
+	 	form.classList.remove("invalid");
+	 	text.innerHTML="Your email address is valid";
+	 	text.style.color="#00ff00";
+	 }
+	 else{
+	 	form.classList.remove("valid");
+	 	form.classList.add("invalid");
+	 	text.innerHTML="Please enter valid email address";
+	 	text.style.color="#ff0000";
+	 }
+	 	 if (email==""){
+	 	form.classList.remove("valid");
+	 	form.classList.remove("invalid");
+	 	text.innerHTML="";
+	 	text.style.color="#00ff00";
+	 }
+}
+	</script>
+</div>
+<button class ="button"><span><a href="http://www.fao.org/nepal/fao-in-nepal/nepal-at-a-glance/en/" target ="__blank"><b>A new windows </b></a></span>
+</button>
+	<footer>
+    <p align="center" class="footer__copy">&#169; <b>Online Tarkari Bazar. All right reserved</b></p>
+    <p align="center"><b>Final Site by:Dikshya Khadka.</b></p>
+    </footer>
+</body>
+</html>

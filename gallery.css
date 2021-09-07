@@ -1,0 +1,96 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+body{
+	background-image: url('images/background.jpg');
+	background-size: cover;
+	min-height: 200vh;
+}
+header{
+	
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.6s;
+	padding: 40px 100px;
+}
+header .logo{
+	position: relative;
+	font-weight: 700;
+	color: black;
+	text-decoration: none;
+	font-size: 1.5;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: 0.6s;
+	padding: 10px 50px;
+	z-index: 100000;
+}
+header ul{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+header ul li{
+	position: relative;
+	list-style: none;
+}
+header ul li a{
+	position: relative;
+	margin: 0 50px;
+	text-decoration: none;
+	color: black;
+	letter-spacing: 2px;
+	font-weight: 500px;
+	transition: 0.6px;
+}
+.G{
+	max-width: 1500px;
+	overflow: auto;
+	padding-left: 150px;
+	height: 1200px;
+}
+.gallery{
+	margin: 5px;
+	border:1px solid #ccc;
+	float: left;
+	width: 390px;
+}
+.gallery img{
+	width: 100%;
+	filter: grayscale(100%);
+	transition: 1s;
+	height: 300px;
+
+}
+.gallery img:hover{
+	filter: grayscale(0%);
+	transform: scale(1.1);
+}
+h1{
+	font-weight: 2em;
+	text-align: center;
+}
+@media screen and (max-width: 1140px){
+
+.G{
+	width:1000px;
+}
+}
+.footer__copy{
+	font-size: 20px;
+	text-align: center;
+	color: black;
+}
+.test{
+	position: absolute;
+	margin-left: 47 vh;
+	margin-top: 6vh;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>About Us</title>
+	<link rel="stylesheet" type="text/css" href="aboutus.css">
+</head>
+<body>
+	<header class="Nav">
+		<a href="#" class="logo">Online Tarkari Bazar</a>
+		<ul>
+		<li><a class="a" href="index.html" >HOME</a></li>
+    	<li><a class="b" href="profile.html" >PROFILE</a></li>
+    	<li><a class="c" href="gallery.html" >GALLERY</a></li>     
+    	<li><a class="d" href="contact.html" >CONTACT US</a></li> 
+    	<li><a class="e" href="aboutus.html" >ABOUT US</a></li>
+    </ul>
+	</header>
+	<div class="container">
+		<center>
+			<h1>-- About Us --</h1>
+			<p>We are a team of enthusiast with the motive of bringing easiness in online shopping in green grocers and also to promote agriculture.Its the very first web site where people will able to see market price and the cost price live.Everyday there will be update and people can easly order there vegetables online</p>
+			<div class="img">	
+			</div>		</center>
+			<footer> <br> <br> <br> <br> <br> <br> <br> <br>
+    <p align="center" class="footer__copy">&#169;Online Tarkari Bazar. All right reserved</p>
+    <p align="center">Final Site by:Dikshya Khadka.</p>
+    </footer>
+	</div>
+	<div id="MyClockDisplay" class="clock">
+	<script type="text/javascript">
+		function showTime(){
+	var date =new Date();
+	var h=date.getHours();
+	var m=date.getMinutes();
+	var s=date.getSeconds();
+	var session="AM";
+	if (h==0){
+		h=12;
+	}
+	if (h>12) {
+		h=h-12;
+		session="PM";
+	}
+	h=(h<10)?"0"+h:h;
+	m=(m<10)?"0"+m:m;
+	s=(s<10)?"0"+s:s;
+
+	var time=h+":"+m+":"+s+" "+session;
+	document.getElementById("MyClockDisplay").innerText=time;
+	document.getElementById("MyClockDisplay").textContent=time;
+	
+	setTimeout(showTime,1045);	
+}
+showTime();
+
+	</script>
+
+	</div>
+
+</body>
+</html>
